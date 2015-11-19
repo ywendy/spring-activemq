@@ -22,7 +22,10 @@ public class ProducerServiceTest {
 	@Test
 	public void testSendMessage(){
 		String message = "this is tony first message";
-		producerService.sendMessage(destination, message);
+		for (int i = 0; i < 100; i++) {
+			message +="i";
+			producerService.sendMessage(destination, message);
+		}
 	}
 
 }

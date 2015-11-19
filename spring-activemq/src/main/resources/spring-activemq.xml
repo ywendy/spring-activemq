@@ -38,7 +38,7 @@
 	<!--这个是队列目的地 -->
 	<bean id="queueDestination" class="org.apache.activemq.command.ActiveMQQueue">
 		<constructor-arg>
-			<value>queue</value>
+			<value>my_queue</value>
 		</constructor-arg>
 	</bean>
 
